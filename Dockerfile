@@ -8,4 +8,4 @@ COPY . .
 
 RUN cargo build --release
 
-CMD PORT=$PORT ADDRESS=$ADDRESS ./target/release/server
+CMD PORT=$PORT ADDRESS=$ADDRESS ./target/release/map-name-game
