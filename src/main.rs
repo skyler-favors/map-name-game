@@ -13,14 +13,12 @@ async fn main() {
     dotenv().ok();
     let port = env::var("PORT").unwrap();
 
-    let paths = fs::read_dir("./").unwrap();
+    let paths = fs::read_dir("./bin").unwrap();
     for path in paths {
         println!("Name: {}", path.unwrap().path().display())
     }
-
     println!("-----------------------");
-
-    let paths = fs::read_dir("/").unwrap();
+    let paths = fs::read_dir("/app").unwrap();
     for path in paths {
         println!("Name: {}", path.unwrap().path().display())
     }
