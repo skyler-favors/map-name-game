@@ -1,1 +1,2 @@
-# Tutorial 2 ()
+# Map Name Game
+ArcGIS + TypeScript
