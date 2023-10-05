@@ -1,7 +1,7 @@
-use std::env;
-
 use axum::Router;
 use dotenv::dotenv;
+use std::env;
+use std::fs;
 use tower_http::{
     services::ServeDir,
     trace::{DefaultMakeSpan, DefaultOnResponse, TraceLayer},
@@ -12,6 +12,11 @@ use tracing::Level;
 async fn main() {
     dotenv().ok();
     let port = env::var("PORT").unwrap();
+
+    let paths = fs::read_dir("./").unwrap();
+    for path in paths {
+        println!("Name: {}", path.unwrap().path().display())
+    }
 
     tracing_subscriber::fmt()
         .with_target(false)
