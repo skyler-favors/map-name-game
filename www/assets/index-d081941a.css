@@ -1,1 +1,0 @@
-@import"https://js.arcgis.com/4.27/@arcgis/core/assets/esri/themes/light/main.css";html,body,#map{padding:0;margin:0;height:100%;width:100%}.container{display:flex;flex-direction:row;height:100%;width:100%}#side-panel{width:15vw;height:100%;display:flex;flex-direction:column}#input{padding:5px;font-size:1.5rem;line-height:1.75rem}#list{overflow:scroll;text-transform:capitalize}
